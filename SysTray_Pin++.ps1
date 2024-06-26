@@ -10,7 +10,7 @@ $ims.Write($IconBytes, 0, $IconBytes.Length)
 # Create the main form
 $form = New-Object System.Windows.Forms.Form
 $form.Text = "SysTray Pin++"
-$form.Size = New-Object System.Drawing.Size(390, 130)
+$form.Size = New-Object System.Drawing.Size(390, 120)
 $form.Icon = [System.Drawing.Icon]::FromHandle((New-Object System.Drawing.Bitmap -Argument $ims).GetHIcon())
 $form.StartPosition = "CenterScreen"
 $form.TopMost = $true
@@ -26,7 +26,7 @@ $label.Size = New-Object System.Drawing.Size(370, 20)
 
 # Create the text box
 $textBox = New-Object System.Windows.Forms.TextBox
-$textBox.Location = New-Object System.Drawing.Point(10, 31)
+$textBox.Location = New-Object System.Drawing.Point(10, 30)
 $textBox.Size = New-Object System.Drawing.Size(260, 20)
 
 # Create the browse button
@@ -38,7 +38,7 @@ $browseButton.Size = New-Object System.Drawing.Size(100, 24)
 # Create the OK button
 $okButton = New-Object System.Windows.Forms.Button
 $okButton.Text = "OK"
-$okButton.Location = New-Object System.Drawing.Point(150, 70)
+$okButton.Location = New-Object System.Drawing.Point(150, 60)
 $okButton.Size = New-Object System.Drawing.Size(100, 24)
 
 # Add the controls to the form
